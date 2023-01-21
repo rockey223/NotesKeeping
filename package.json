@@ -1,5 +1,6 @@
 {
   "name": "new-notes",
+  "homepage": "https://rockey223.github.io/NotesKeeping",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
@@ -15,6 +16,8 @@
     "typescript": "4.1.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
