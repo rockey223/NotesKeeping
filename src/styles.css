@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Karla", sans-serif;
+}
+.header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgb(209, 177, 34);
+}
+.header .logo {
+  height: 100px;
+  width: 100px;
+  display: inline;
+  margin-bottom: 15px;
+}
+
+.header .logo .logo-img {
+  height: 90px;
+  width: 90px;
+  padding: 10px;
+}
+.header-title {
+  display: inline;
+  font-size: 30px;
+  font-weight: 900;
+  padding: 0 30px;
+}
+/* add new item button */
+.add-new-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.addNewBtn {
+  height: 75px;
+  width: 75px;
+  border-radius: 50px;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: rgb(209, 177, 34);
+}
+.addNewBtn span {
+  margin: 0 0 10px 0;
+}
+
+/* Modal */
+.modal {
+  z-index: 999;
+  position: absolute;
+  height: 80vh;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.567);
+
+  /* border-radius: 25px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal .modal-box {
+  height: 425px;
+  width: 500px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+  background-color: #a4a214;
+}
+.modal input {
+  height: 50px;
+  width: 300px;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 0 20px;
+  outline: none;
+  border: none;
+}
+.modal textarea {
+  outline: none;
+  height: 200px;
+  width: 310px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+}
+.modal .add {
+  height: 50px;
+  width: 150px;
+  border-radius: 25px;
+  background-color: #005600;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+.modal-heading {
+  font-size: 30px;
+}
+.closeModal {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  background-color: #fff;
+  font-size: 50px;
+  color: #ff0000;
+  font-weight: 900;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -20px;
+  top: -20px;
+}
+.closeModal span {
+  margin-top: 30px;
+  color: #ff0000;
+  font-size: 70px;
+}
+
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note button {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: #f5ba13;
+  border: none;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
+}
+.delete-icon {
+  height: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    position: sticky;
+    top: 0;
+  }
+  .addNewBtn {
+    position: fixed;
+    height: 55px;
+    width: 55px;
+    right: 10px;
+    bottom: 10px;
+  }
+  .modal .modal-box {
+    height: 300px;
+    width: 350px;
+  }
+  .modal .add {
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+    background-color: #005600;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  .closeModal {
+    height: 40px;
+    width: 40px;
+  }
+  .closeModal span {
+    margin-top: 20px;
+    color: #ff0000;
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .modal .modal-box {
+    height: 300px;
+    width: 250px;
+  }
+
+  .modal input {
+    height: 60px;
+    width: 200px;
+  }
+  .modal textarea {
+    height: 200px;
+    width: 210px;
+  }
+  .modal-heading {
+    padding: 10px;
+    font-size: 21px;
+  }
+}
